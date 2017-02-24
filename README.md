@@ -7,7 +7,7 @@ write the compiled js/css to the web/cache folder.
 It integrates browsersync live-reload and proxies the shopware container.
 
     grunt:
-      image: onedrop/shopware-grunt:1.0
+      image: 1drop/shopware-grunt:1.0
       links:
         - app:my.shopware.docker # TODO: CHANGE HERE
       ports:
@@ -33,7 +33,7 @@ It integrates browsersync live-reload and proxies the shopware container.
 
 Available ENV params:
 
-`SHOP_ID`: Specifies the ID of the shop that should be watched (see s_core_shops).
-`SYNC_PROXY_HOST`: Under which hostname is the shopware instance available to the grunt container (for browsersync)
-`THEME`: The theme that should be monitored by ESLint
+`SHOP_ID`: Specifies the ID of the shop that should be watched (see s_core_shops).  
+`SYNC_PROXY_HOST`: Under which hostname is the shopware instance available to the grunt container (for browsersync)  
+`THEME`: The theme that should be monitored by ESLint  
 

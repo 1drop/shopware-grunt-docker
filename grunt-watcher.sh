@@ -1,3 +1,3 @@
-grunt --shopId $SHOP_ID &
+grunt default --shopId=$SHOP_ID &
 
 wait

@@ -5,6 +5,8 @@ module.exports = {
         'browser': true,
         'jquery': true
     },
+    'plugins': ['compat'],
+    'browserslist': ['last 3 versions', 'ie > 10'],
     'globals': {
         'jQuery': true,
         'StateManager': true,
@@ -13,6 +15,7 @@ module.exports = {
         'Modernizr': true
     },
     'rules': {
+        'compat/compat': 'error',
         'arrow-parens': 0,
         'space-before-function-paren': 0,
         'keyword-spacing': [

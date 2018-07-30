@@ -9,6 +9,7 @@ COPY ./grunt-watcher.sh /app/grunt-watcher.sh
 COPY ./Gruntfile.js /app/Gruntfile.js
 COPY ./.eslintignore /app/.eslintignore
 COPY ./.eslintrc.js /app/.eslintrc.js
+COPY ./.browserslistrc /app/.browserslistrc
 RUN chmod a+x /app/grunt-watcher.sh
 
 RUN mkdir -p /app/web/cache && mkdir -p /app/engine/Shopware/Plugins/ && mkdir -p /app/themes/Frontend/

@@ -58,7 +58,10 @@ module.exports = function (grunt) {
                     watchTask: true,
                     reloadOnRestart: true,
                     ws: true,
-                    proxy: process.env.SYNC_PROXY_HOST
+                    proxy: process.env.SYNC_PROXY_HOST,
+                    socket: {
+                        domain: process.env.SYNC_WS_PROXY_HOST
+                    }
                 }
             }
         },

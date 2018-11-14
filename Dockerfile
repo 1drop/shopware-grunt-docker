@@ -15,3 +15,4 @@ RUN chmod a+x /app/grunt-watcher.sh
 RUN mkdir -p /app/web/cache && mkdir -p /app/engine/Shopware/Plugins/ && mkdir -p /app/themes/Frontend/
 
 CMD "/app/grunt-watcher.sh"
+EXPOSE 3000 3001 3002

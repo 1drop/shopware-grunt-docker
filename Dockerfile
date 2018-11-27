@@ -1,4 +1,4 @@
-FROM node:7.5
+FROM node:latest
 
 COPY ./package.json /app/package.json
 WORKDIR /app/

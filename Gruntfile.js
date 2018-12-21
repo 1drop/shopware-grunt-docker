@@ -90,6 +90,8 @@ module.exports = function (grunt) {
             less: {
                 files: [
                     '/app/engine/Shopware/Plugins/**/*.less',
+                    '/app/Plugins/**/frontend/**/src/js/**/*.less',
+                    '/app/custom/project/**/frontend/**/src/js/**/*.less',
                     '/app/custom/plugins/**/*.less',
                     '/app/themes/Frontend/**/*.less'
                 ],
@@ -102,6 +104,8 @@ module.exports = function (grunt) {
                 files: [
                     '/app/themes/Frontend/**/_public/src/js/*.js',
                     '/app/engine/Shopware/Plugins/**/frontend/**/src/js/**/*.js',
+                    '/app/Plugins/**/frontend/**/src/js/**/*.js',
+                    '/app/custom/project/**/frontend/**/src/js/**/*.js',
                     '/app/custom/plugins/**/frontend/**/src/js/**/*.js'
                 ],
                 tasks: ['uglify:development', 'eslint'],

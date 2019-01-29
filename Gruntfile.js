@@ -90,8 +90,8 @@ module.exports = function (grunt) {
             less: {
                 files: [
                     '/app/engine/Shopware/Plugins/**/*.less',
-                    '/app/Plugins/**/frontend/**/src/js/**/*.less',
-                    '/app/custom/project/**/frontend/**/src/js/**/*.less',
+                    '/app/Plugins/**/frontend/**/src/less/**/*.less',
+                    '/app/custom/project/**/frontend/**/src/less/**/*.less',
                     '/app/custom/plugins/**/*.less',
                     '/app/themes/Frontend/**/*.less'
                 ],
